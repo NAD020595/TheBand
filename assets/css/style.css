@@ -18,6 +18,26 @@ html {
 #header {
   height: 46px;
   background-color: #000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+#header .search-btn{
+  float: right;
+  padding: 0 21px;  
+}
+
+#header .search-btn:hover{
+ cursor: pointer;
+ background-color: #f44336;
+}
+
+#header .search-icon{
+ color: #fff;
+ font-size: 20px;
+ line-height: 46px;
 }
 
 #nav {
@@ -32,6 +52,11 @@ html {
   display: inline-block;
 }
 
+#nav > li > a {
+  color: #fff;
+  text-transform: uppercase;
+}
+
 #nav li {
   position: relative;
 }
@@ -41,19 +66,14 @@ html {
   background-color: #ccc;
 }
 
-#nav li:hover .subnav {
-  display: block;
-}
-
-#nav > li > a {
-  color: #fff;
-  text-transform: uppercase;
-}
-
 #nav li a {
   text-decoration: none;
   line-height: 46px;
   padding: 0 24px;
+}
+
+#nav li:hover .subnav {
+  display: block;
 }
 
 #nav .subnav {
@@ -75,24 +95,9 @@ html {
   font-size: 12px;
 }
 
-#header .search-btn{
-   float: right;
-   padding: 0 21px;  
-}
-
-#header .search-btn:hover{
-  cursor: pointer;
-  background-color: #f44336;
-}
-
-#header .search-icon{
-  color: #fff;
-  font-size: 20px;
-  line-height: 46px;
-}
-
 /* Slider */
 #slider {
-  min-height: 500px;
-  /* background-color: #333; */
+  margin-top: 46px;
+  min-height: 400px;
+  background-color: green;
 }
