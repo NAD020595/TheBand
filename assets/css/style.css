@@ -22,22 +22,23 @@ html {
   top: 0;
   left: 0;
   right: 0;
+  z-index: 1;
 }
 
-#header .search-btn{
+#header .search-btn {
   float: right;
-  padding: 0 21px;  
+  padding: 0 21px;
 }
 
-#header .search-btn:hover{
- cursor: pointer;
- background-color: #f44336;
+#header .search-btn:hover {
+  cursor: pointer;
+  background-color: #f44336;
 }
 
-#header .search-icon{
- color: #fff;
- font-size: 20px;
- line-height: 46px;
+#header .search-icon {
+  color: #fff;
+  font-size: 20px;
+  line-height: 46px;
 }
 
 #nav {
@@ -97,7 +98,28 @@ html {
 
 /* Slider */
 #slider {
+  position: relative;
   margin-top: 46px;
-  min-height: 400px;
-  background-color: green;
+  padding-top: 50%;
+  background: url("/assets/img/slider/slider1.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+#slider .text-content {
+  position: absolute;
+  bottom: 47px;
+  color: #fff;
+  width: 100%;
+  text-align: center;
+}
+
+#slider .text-heading{
+  font-weight: 500;
+  font-size: 24px;
+}
+
+#slider .text-description{
+  margin-top: 25px;
+  font-size: 15px;
 }
